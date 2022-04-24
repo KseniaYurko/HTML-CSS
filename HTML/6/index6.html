@@ -1,0 +1,75 @@
+<DOCTYPE! html>
+<html>
+    <head>
+        <title>Lesson 4. Forms.</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    </head>
+
+    <body>
+        <!--форма-->
+        <form action="#" method="post" enctype="multipart/form-data"></form>
+
+        <!--обычное поле-->
+        <div><input tabindex="1" type="text" name="username" value="user"/></div>
+        <!--пароль поле-->
+        <div><input tabindex="2" type="password" name="username" value="userpass"/></div>
+
+        <!--выбор чегото одного из списка-->
+        <div>
+            <p><input tabindex="2" checked type="radio" name="beer" value="lager">Светлое пиво</p>
+            <p><input tabindex="2" type="radio" name="beer" value="dark">Темное пиво</p>
+        </div>
+        <br>
+
+        <div>
+            <p><input tabindex="3" type="radio" name="beer2" value="lager">Светлое пиво</p>
+            <p><input tabindex="3" checked type="radio" name="beer2" value="dark">Темное пиво</p>
+        </div>
+        <br/>
+
+        <!--множественный выбор -->
+        <div>
+            <p><input tabindex="4" disabled type="checkbox" name="car" value="yes">you have a car?</p>
+            <p><input tabindex="4" type="checkbox" name="car" value="yes">two?</p> <!--disabled для всех кроме form - заблокированный блок, не передает данные--> 
+            <p><input tabindex="4" type="checkbox" name="car" value="yes">3</p>
+            <p><input tabindex="4" type="checkbox" name="car" value="yes">4&</p>
+        </div>
+
+        <!--загрузка файла-->
+        <div>
+            <p><input tabindex="5" type="file" name="foto" value="act"></p>
+            <p><input tabindex="5" checked type="file" name="foto" value="dog"></p><!--checkeded - заранее выбранное-->
+        </div>
+
+        <!--текстовое поле-->
+        <div>
+            <textarea tabindex="6" placeholder="gjk" name="text"></textarea> <!--placeholder для input and textarea-->
+        </div>
+        <br>
+
+        <!--выпадающий список-->
+        <div>
+            <select tabindex="7" multiple  name="color">  <!-- multiple - множественный выбор, если нет, то 1 пункт -->
+                <option value="red">red</option>
+                <option value="yellow">yellov</option>
+                <option selected value="blue">blue</option> <!--selected - заранее выбранное-->
+            </select>
+        </div>
+        <br>
+
+        <!--кнопка-->
+        <div>
+            <button type="submit">send</button> <!-- отправка формы -->
+        </div>
+
+        
+        <div>
+            <button type="reset">send</button> <!-- полная очистка формы -->
+        </div>
+
+
+
+    </body>
+
+</html>
